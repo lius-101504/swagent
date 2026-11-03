@@ -1,0 +1,28 @@
+# Build / runtime
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# SolidWorks output
+out/
+works/
+*.sldprt
+*.sldasm
+*.slddrw
+*.SLDPRT
+*.SLDASM
+*.SLDDRW
+*.step
+*.stp
+*.stl
+*.igs
+*.x_t
+*.3mf
+*.bmp
+
+# local runs
+*.log

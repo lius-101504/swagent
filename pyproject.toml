@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swagent"
+version = "1.0.0"
+description = "MCP server that drives a local SOLIDWORKS installation over COM"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "swagent contributors" }]
+keywords = ["solidworks", "mcp", "cad", "com", "comtypes", "model-context-protocol"]
+classifiers = [
+    "Environment :: Win32 (MS Windows)",
+    "Intended Audience :: Manufacturing",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = ["comtypes>=1.4"]
+
+[project.scripts]
+swagent-mcp = "swagent.server:main"
+
+[project.urls]
+Homepage = "https://github.com/<your-account>/swagent"
+
+[tool.setuptools]
+packages = ["swagent"]
